@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CartaxCheckSuite">
+	<parameter name="browser" value="chrome" />
+	<parameter name="URL" value="https://cartaxcheck.co.uk/" />
+	<test name="Test">
+		<parameter name="inputFileName" value="car_input_file_1.txt" />
+		<parameter name="outputFileName" value="car_output_file_1.txt" />
+		<classes>
+			<class name="co.uk.cartaxcheck.tests.FreeCarCheckTests" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

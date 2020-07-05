@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [CartaxCheckSuite]">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="URL" value="https://cartaxcheck.co.uk/"/>
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="outputFileName" value="car_output_file_1.txt"/>
+    <parameter name="inputFileName" value="car_input_file_1.txt"/>
+    <classes>
+      <class name="co.uk.cartaxcheck.tests.FreeCarCheckTests">
+        <methods>
+          <include name="logResult"/>
+          <include name="initiateReporting"/>
+          <include name="generateReport"/>
+          <include name="searchCarAndVerifyDetailsFile1" invocation-numbers="1"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- co.uk.cartaxcheck.tests.FreeCarCheckTests -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [CartaxCheckSuite] -->
